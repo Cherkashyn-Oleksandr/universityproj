@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mini-Paint</title>
+    <script src="script.js"></script>
+	
+	<link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body onload="main_load();">
+
+    <div style="text-align: center;">
+        <h1>Mini-Paint</h1>
+    </div>
+
+    <div class="canvasDiv">
+        <canvas id="canvas" width="500" height="500"
+                style="border: 1px solid #000000; background-color: white;"></canvas>
+    </div>
+
+    <div class="toolsDiv">
+        
+            
+        
+        <table>
+
+            <tr>
+
+                
+
+                <td class="colorCell" style="background-color:#000000;"></td>
+
+                <td class="colorCell" style="background-color:red;"></td>
+
+                <td class="colorCell" style="background-color:green;"></td>
+
+                <td class="colorCell" style="background-color:blue;"></td>
+            </tr>
+
+            <tr>
+                <td class="colorCell" style="background-color:yellow;"></td>
+
+                <td class="colorCell" style="background-color:magenta;"></td>
+
+                <td class="colorCell" style="background-color:#008080;"></td>
+
+                <td class="colorCell" style="background-color:#080000;"></td>
+            </tr>
+
+        </table>
+        <br><br>
+        <table>
+            <tr>
+                <td colspan="2">
+
+                    <label>line thickness </label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input id="widthLine" name="thickness"
+                           type="range" min="1" max="10" value="5"
+                           class="slider">
+                </td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <button onclick="clearCanvas();"
+                            class="button">
+                        Clear
+                    </button>
+                    <button onclick="SaveImage();"
+                            class="button">
+                        Save
+                    </button>
+
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<HTML>
+<HEAD>
+    <title> Calculator </title>
+    <style type="text/css">
+        #calculator * {
+            font - size: 16px;
+        }
+
+        #calculator table {
+            border: solid 3px silver;
+            border-spacing: 3px;
+            background-color: #EEE;
+        }
+
+            #calculator table td {
+                border - spacing: 3px;
+            }
+
+        input.display {
+            width: 166px;
+            text-align: right;
+        }
+
+        td.buttons {
+            border - top: solid 1px silver;
+        }
+
+        input[type= button] {
+            width: 40px;
+            height: 30px;
+        }
+
+    </style>
+</HEAD>
+  
+  <body>
+  <form name="calc" action="">
+  <script LANGUAGE ="JavaScript" src="JS/CalcFuntion.js"> </script>
+  
+  <table class="tblCalc" cellpadding=0 cellspacing=0>
+      <tr>
+          <td colspan=5 align=center>
+              <input id="editWide" name="ReadOut" type="Text" 
+                     size=28 value="0" width=250px
+                     style="text-align:right">
+              
+          </td>
+      </tr>
+
+      <tr>
+          <td colspan=3></td>
+          <td>
+              <input name="btnBack" type="Button"
+                     value="<-" onclick="Back()" />
+          </td>
+
+
+          <td>
+              <input name="btnClear" type="Button"
+                     value="C" onclick="Clear()" />
+          </td>
+      </tr>
+
+      <tr>
+          <td>
+              <input name="btnSeven" type="Button"
+                     value="7" onclick="NumPressed(7)" />
+          </td>
+
+          <td>
+              <input name="btnEight" type="Button"
+                     value="8" onclick="NumPressed(8)" />
+          </td>
+
+          <td>
+              <input name="btnNine" type="Button"
+                     value="9" onclick="NumPressed(9)" />
+          </td>
+
+          <td>
+              <input name="btnPlus" type="Button"
+                     value="+" onclick="Operation('+')" />
+          </td>
+
+          <td>
+              <input name="btnMultiply" type="Button"
+                     value="*" onclick="Operation('*')" />
+          </td>
+      </tr>
+
+
+      <tr>
+          <td>
+              <input name="btnFour" type="Button"
+                     value="4" onclick="NumPressed(4)" />
+          </td>
+
+          <td>
+              <input name="btnFive" type="Button"
+                     value="5" onclick="NumPressed(5)" />
+          </td>
+
+          <td>
+              <input name="btnSix" type="Button"
+                     value="6" onclick="NumPressed(6)" />
+          </td>
+
+          <td>
+              <input name="btnMinus" type="Button"
+                     value="-" onclick="Operation('-')" />
+          </td>
+
+          <td>
+              <input name="btnDivide" type="Button"
+                     value="/" onclick="Operation('/')" />
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <input name="btnOne" type="Button"
+                     value="1" onclick="NumPressed(1)" />
+          </td>
+
+          <td>
+              <input name="btnTwo" type="Button"
+                     value="2" onclick="NumPressed(2)" />
+          </td>
+
+          <td>
+              <input name="btnThree" type="Button"
+                     value="3" onclick="NumPressed(3)" />
+          </td>
+
+          <td>
+              <input name="btnPercent" type="Button"
+                     value="%" onclick="Operation('%')" />
+          </td>
+
+
+      </tr>
+
+      <tr>
+          <td>
+              <input name="btnZero" type="Button"
+                     value="0" onclick="NumPressed(0)" />
+          </td>
+
+          <td>
+              <input name="btnDecimal" type="Button"
+                     value="." onclick="Decimal()" />
+          </td>
+
+          <td>
+              <input name="btnNeg" type="Button"
+                     value="+/-" onclick="Neg()" />
+          </td>
+
+          <td colspan="2">
+              <input id="btnWide" name="btnEquals" type="Button"
+                     value="=" onclick="Operation('=')" />
+          </td>
+      </tr>
+
+
+  </table>
+  </form>
+  </body>
+  </html>
